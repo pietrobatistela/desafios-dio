@@ -1,2 +1,2 @@
 # desafios-dio
-Desafios de projeto desenvolvidos durante o Bootcamp Santander Front-end disponibilizado pela DIO.
+Desafios de projeto desenvolvidos durante o Bootcamp Santander Front-End disponibilizado pela DIO.
