@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-image: url("./assets/images/header_background.png");
+  background-size: cover;
+  background-position: 68% center;
+  background-repeat: no-repeat;
+  height: 505px;
+  min-width: 430px;
+}
+
+#header-content {
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#header-content h1 {
+  max-width: 313px;
+  font-family: "Luckiest Guy", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+#header-content p {
+  max-width: 757px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 502px;
+  max-height: 122px;
+}
+
+#buttons > button {
+  padding: 20px;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+#buttons > button:nth-child(2) {
+  background-color: #23272a;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#section-01,
+#section-02,
+#section-03,
+#section-04 {
+  padding: 40px 20px;
+}
+
+.main-section-img {
+  max-width: 100%;
+}
+
+.main-section-h2 {
+  max-width: 608px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #23272a;
+}
+
+.main-section-p {
+  max-width: 802px;
+  margin-top: 20px;
+}
+
+#section-04,
+#section-02 {
+  background-color: #f6f6f6;
+}
+
+#section-04 h2 {
+  font-family: "Luckiest Guy", sans-serif;
+  font-weight: 400;
+  color: #23272a;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #23272a;
+  padding: 40px;
+}
+
+footer img {
+  display: block;
+  max-width: 100%;
+  width: 162px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+  #header-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buttons {
+    flex-direction: row;
+    text-wrap: nowrap;
+    border-radius: 28px;
+  }
+
+  #buttons > button {
+    padding: 12px 24px;
+  }
+
+  #section-01,
+  #section-02,
+  #section-03,
+  #section-04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #section-01,
+  #section-02,
+  #section-03 {
+    flex-direction: row;
+  }
+
+  .main-section-text {
+    height: 374px;
+    width: 348px;
+    text-align: left;
+  }
+
+  #section-01 .main-section-text {
+    margin-bottom: 50px;
+  }
+
+  #section-02 img {
+    order: 2;
+  }
+
+  #section-02 .main-section-text {
+    justify-content: center;
+    order: 1;
+  }
+
+  .main-section-h2 {
+    font-size: 2.5rem;
+  }
+
+  #section-04 h2 {
+    font-size: 2.5rem;
+    width: 608px;
+  }
+}
