@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Youtube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section id="header">
+        <div id="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            width="24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <img
+            src="./assets/images/logo-youtube.png"
+            alt="Logo do Youtube"
+            height="20px"
+            width="90px"
+          />
+        </div>
+
+        <div id="search">
+          <div id="search-bar"></div>
+          <div id="search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+              width="24px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div id="actions">
+          <div id="camera">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="size-6"
+              width="24px"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+          </div>
+          <div id="bell">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+              width="24px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+              />
+            </svg>
+          </div>
+          <div id="user">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+              width="34px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- VIDEO PRINCIPAL -->
+
+      <section id="main-content">
+        <div id="main-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/DqC8R2p0lls?si=9dDAU89f3fpc2vS_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- TITULO DO VIDEO -->
+
+        <p id="video-title">Lançamento Santander Bootcamp 2025</p>
+
+        <!-- ICONE CANAL E BOTÕES -->
+
+        <div id="video-actions">
+          <div id="channel-infos">
+            <img src="./assets/images/dio-logo.jpg" alt="Logo da DIO" />
+            <p class="bold-text">
+              <a href="https://www.youtube.com/@diomakethechange">DIO</a>
+              <br />
+              <span>121 mil inscritos</span>
+            </p>
+          </div>
+
+          <div id="subscribe">INSCREVA-SE</div>
+          <div class="item" id="like">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="bold-text">2,4 mil</p>
+          </div>
+
+          <div class="item" id="deslike">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.999995H18.67C19.236 0.989986 19.7859 1.18813 20.2154 1.55681C20.6449 1.9255 20.9241 2.43905 21 3V10C20.9241 10.5609 20.6449 11.0745 20.2154 11.4432C19.7859 11.8119 19.236 12.01 18.67 12H16M9 14V18C9 18.7956 9.31607 19.5587 9.87868 20.1213C10.4413 20.6839 11.2044 21 12 21L16 12V0.999995H4.72C4.23767 0.994543 3.76962 1.16359 3.40209 1.47599C3.03457 1.78839 2.79232 2.22309 2.72 2.7L1.34 11.7C1.29649 11.9866 1.31583 12.2793 1.39666 12.5577C1.47749 12.8362 1.6179 13.0937 1.80814 13.3125C1.99839 13.5313 2.23392 13.7061 2.49843 13.8248C2.76294 13.9435 3.05009 14.0033 3.34 14H9Z"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="bold-text">Não gostei</p>
+          </div>
+
+          <div class="item" id="compartilhar">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.59 13.51L15.42 17.49"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.41 6.50999L8.59 10.49"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="bold-text">Compartilhar</p>
+          </div>
+
+          <div class="item" id="download">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 15V3"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="bold-text">Download</p>
+          </div>
+        </div>
+
+        <!-- DESCRIÇÃO DO VIDEO -->
+        <br />
+        <div class="bold-text" id="views">
+          22.775 visualizações
+          <span>Transmitido ao vivo em 5 de mai. de 2025</span>
+        </div>
+        <br />
+        <div id="description">
+          <p>
+            Acompanhe o lançamento da 5ª edição do Santander Bootcamp, dessa vez
+            com 3 trilhas incríveis para você escolher: <br /><br />• Santander
+            Bootcamp 2025 - 5ª.Ed | Back-end com Java <br />• Santander Bootcamp
+            2025 - 5ª.Ed | Back-end com Python <br />• Santander Bootcamp 2025 -
+            5ª.Ed | Front-end<br />
+            <br />Com experts da DIO, Santander, F1rst – o lado tech do
+            Santander e a Universia, empresa que encontra e contrata talentos
+            para o banco.
+          </p>
+        </div>
+      </section>
+      <br />
+      <!-- ABA DOS VIDEOS RECOMENDADOS-->
+
+      <section id="recommended">
+        <div class="videos">
+          <a href="#"
+            ><img
+              src="./assets/images/thumbnail01.png"
+              alt="Ciência de Dados UNIMED"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Geração Tech Unimed - BH - Ciência de Dados</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              2,1 mil visualizações<br />
+              Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img src="./assets/images/thumbnail02.png" alt="Scrum Talks"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Scrum Talks</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              1,6 mil visualizações <br />Transmitido há 3 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img
+              src="./assets/images/thumbnail03.png"
+              alt="Fast Track Specialist Machine Learning"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Machine Learning Avançado - Fast Track</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              1,7 mil visualizações <br />Transmitido há 4 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img src="./assets/images/thumbnail04.png" alt="Project Planning"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Global Skills #2 - Project Planning</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              971 visualizações <br />Transmitido há 5 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img
+              src="./assets/images/thumbnail05.png"
+              alt="Como Aprender Python do Zero"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Como aprender a programar Python do ZERO</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              711 visualizações <br />Transmitido há 6 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img
+              src="./assets/images/thumbnail01.png"
+              alt="Ciência de Dados UNIMED"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Geração Tech Unimed - BH - Ciência de Dados</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              2,1 mil visualizações <br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img src="./assets/images/thumbnail02.png" alt="Scrum Talks"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Scrum Talks</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              1,6 mil visualizações <br />Transmitido há 3 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img
+              src="./assets/images/thumbnail03.png"
+              alt="Fast Track Specialist Machine Learning"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Machine Learning Avançado - Fast Track</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              1,7 mil visualizações <br />Transmitido há 4 dias
+            </p>
+          </div>
+        </div>
+        <div class="videos">
+          <a href="#"
+            ><img src="./assets/images/thumbnail04.png" alt="Project Planning"
+          /></a>
+          <div class="info">
+            <h3 class="bold-text">
+              <a href="#">Global Skills #2 - Project Planning</a>
+            </h3>
+            <p>DigitalInnovationOne</p>
+            <p>
+              971 visualizações <br />Transmitido há 5 dias
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
