@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/52499a9175.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="name">Pietro Batistela</span>
+      <nav class="header-nav">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+      </nav>
+      <i class="bi bi-list" id="menu"></i>
+      <div class="sidebar">
+        <i class="bi bi-x-lg" id="close-btn"></i>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="overlay"></div>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Código limpo. Interfaces práticas. Soluções completas.</h1>
+        <p>
+          Pietro Martins Batistela, desenvolvedor Full-Stack em formação que
+          busca sua primeira oportunidade no mercado para fazer a diferença
+          através de seus serviços.
+        </p>
+        <a href="#projects" class="btn">Ver projetos</a>
+
+        <div class="container">
+          <span>Conhecimento nas principais tecnologias do mercado:</span>
+          <div class="icons">
+            <i class="bi bi-javascript"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projetos</h2>
+        <div class="project">
+          <figure>
+            <img
+              src="./images/print-claudi.jpeg"
+              alt="Celular com imagem de projeto"
+            />
+          </figure>
+
+          <div class="project-details">
+            <span>Gerenciador de Horários Claudi</span>
+            <p>
+              Projeto desenvolvido como TCC (Trabalho de Conclusão de Curso)
+              durante ensino médio técnico.
+            </p>
+            <ul>
+              <li>Importar horários e rotinas</li>
+              <li>Editar horários e rotinas importados</li>
+              <li>Criação e visualização de contas</li>
+            </ul>
+            <div class="icons">
+              <i class="bi bi-javascript"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <a
+              href="https://github.com/pietrobatistela/Projeto-Claudi"
+              class="btn"
+              target="_blank"
+              >Repositório</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>Sobre mim</h2>
+        <figure>
+          <img src="./images/foto-perfil.jpeg" alt="Foto de Perfil" />
+        </figure>
+        <div class="about-me">
+          <p>
+            Estudante de Ciência da Computação e Técnico em Desenvolvimento de
+            Sistemas com experiência em projetos de aplicativos mobile e web.
+            Apaixonado por tecnologia, com foco em desenvolvimento full-stack,
+            sempre buscando aprendizado contínuo e soluções criativas.
+          </p>
+          <p>
+            Sou uma pessoa com uma boa comunicação e organização, resiliente,
+            adaptativa, de fácil aprendizado e com pensamento lógico.Consigo
+            trabalhar bem em equipe e tenho conhecimento e prática em
+            versionamento de código, desenvolvimento de interfaces web e
+            resolução de problemas.
+          </p>
+          <div class="language">
+            <i class="bi bi-translate"></i>
+            <span>Português - Nativo | Inglês - Avançado</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/pietrobatistela" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pietro-batistela">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <div class="buttons">
+            <a href="#contact" class="btn">Conecte-se comigo</a>
+            <a
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:9be7e7f5-5a8a-423b-ae15-9d1955128b70"
+              class="btn"
+              target="_blank"
+              >Currículo</a
+            >
+          </div>
+        </div>
+
+        <div class="education">
+          <h3>Formação</h3>
+          <div class="education-detail">
+            <div class="education-details">
+              <span class="education-name">Técnico em Desenvolvimento de Sistemas</span>
+              <span>Jan/2022 - Dez/2024</span>
+
+              <div class="item">
+                <i class="bi bi-bank"></i
+                ><span>Escola Técnica Estadual (ETEC)</span>
+              </div>
+
+              <div class="item">
+                <i class="bi bi-mortarboard"></i
+                ><span>Ensino médio integrado com técnico</span>
+              </div>
+            </div>
+            <div class="education-details">
+              <span class="education-name">Bacharelado em Ciência da Computação</span>
+              <span>Jan/2025 - Em andamento</span>
+
+              <div class="item">
+                <i class="bi bi-bank"></i
+                ><span>Universidade Cruzeiro do Sul</span>
+              </div>
+
+              <div class="item">
+                <i class="bi bi-mortarboard"></i><span>Ensino Superior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <h3>Cursos</h3>
+          <div class="dropdown">
+            <div class="dropdown-header" id="toggleDropdown">
+              <span>Linux Fundamentos</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <div class="dropdown-content">
+              <span>FIAP - Centro Universitário | Abr. 2025</span>
+              <p>
+                Comandos em terminais de comando Linux, estrutura de pastas e
+                boas práticas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contato</h2>
+        <p>
+          Estou disponível para serviços e novas conexões. Contate-me via e-mail
+          e conecte-se comigo através das minhas redes sociais.
+        </p>
+        <div class="socials">
+          <a href="https://github.com/pietrobatistela" target="_blank">
+            <i class="bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/pietro-batistela">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <div class="contact-email">
+          <span>pietromartinsb15@gmail.com</span>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          &copy; 2025. Todos os Direitos Reservados. Pietro Batistela.
+          Desenvolvido por PB.
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      const menu = document.querySelector("#menu");
+      const sidebar = document.querySelector(".sidebar");
+      const close = document.querySelector("#close-btn");
+      const overlay = document.querySelector(".overlay");
+      const toggle = document.getElementById("toggleDropdown");
+      const dropdown = document.querySelector(".dropdown");
+      const sidebarLinks = document.querySelectorAll(".sidebar nav a");
+
+      menu.addEventListener("click", () => {
+        sidebar.classList.add("open");
+        overlay.classList.add("active");
+      });
+
+      close.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("active");
+      });
+
+      sidebarLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          sidebar.classList.remove("open");
+          overlay.classList.remove("active");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("active");
+      });
+
+      toggle.addEventListener("click", () => {
+        dropdown.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
